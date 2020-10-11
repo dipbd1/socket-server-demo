@@ -13,8 +13,9 @@ var position = {
 var text = "";
 
 
-Http.listen(env.PORT || 80, () => {
-    console.log('App listening on port 3000!');
+Http.listen(process.env.PORT || 80, () => {
+    console.log('Server is running');
+    console.log(process.env.PORT);
 });
 socketTextSender(Socketio, text);
 socketBlockMover(Socketio, position);
