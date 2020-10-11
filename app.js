@@ -13,7 +13,7 @@ var position = {
 var text = "";
 
 
-Http.listen(env.PORT || 3000, () => {
+Http.listen(env.PORT || 80, () => {
     console.log('App listening on port 3000!');
 });
 socketTextSender(Socketio, text);
